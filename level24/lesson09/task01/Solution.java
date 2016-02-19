@@ -3,7 +3,7 @@ package com.javarush.test.level24.lesson09.task01;
 /* Вспомним наследование
 Исправить наследование во всех классах, чтобы вывод метода main был CCBAYS
 */
-public class Solution {
+public class Solution extends C{
     private class A {
         protected String value = "A";
 
@@ -33,14 +33,14 @@ public class Solution {
 interface JustAnInterface {
     public static final B B = new B();
 
-    class B {
+    class B extends C{
         public B() {
             System.out.print("B");
         }
     }
 }
 
-class C {
+class C implements JustAnInterface{
     public C() {
         System.out.print("C");
         B localB = B;
