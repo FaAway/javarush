@@ -13,9 +13,9 @@
 	</style>
 </head>
 
-<h1>
+<h2>
 	Add a Person
-</h1>
+</h2>
 
 <c:url var="addAction" value="/person/add" ></c:url>
 <c:url var="nextAction" value="/person/next" ></c:url>
